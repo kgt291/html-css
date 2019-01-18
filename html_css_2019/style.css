@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+@import url('https://fonts.google.com/?selection.family=Nanum+Gothic');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.my-mail {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    background-color: #2a5451;
+    height: 50px;
+}
+
+.gnb {
+    height: 100%;
+}
+
+.gnb ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.gnb ul li {
+    float: left;
+    height: 100%;
+}
+
+.gnb ul li a {
+    color: rgba(255,255,255,.7);
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.gnb ul li:not(:first-child) a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .17);
+}
+
+.gnb ul li img {
+    vertical-align: middle;
+}
+
+.divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 0 20px;
+  }
+  
+.new-mail-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url('./imgs/icons.png');
+    background-position: -23px -20px;
+    margin-right: 6px;
+}
+
+.gnb-mail-link {
+    position: relative;
+}
+
+.count-badge {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    color: #fff;
+    font-size: 11px;
+    background-color: red;
+    line-height: initial;
+    border-radius: 10px;
+    padding: 1px 3px;
+    font-weight: bold;
+}
+
+.contents {
+    display: flex;
+    flex: 1;
+}
+
+.lnb {
+    width: 205px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+
+.new-mail {
+    background-color: #cdf0e7;
+    color: #214340;
+    border: 1px solid #d5eae5;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.lnb ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lnb ul li a {
+    color: #222;
+    text-decoration: none;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding: 0 20px;
+}
+
+.lnb ul li a:hover {
+    background-color: #f0f1f5;
+}
+
+.mail-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.mail-list-header {
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.mail-list-contents {
+    display: flex;
+    flex: 1;
+}
+
+.mail-item-list {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.mail-item-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mail-item-list ul li:not(:first-child) {
+    border-top: 1px solid #ddd;
+}
+
+.mail {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.mail-sender {
+    color: #125de6;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mail-title {
+    color: #555;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.mail-preview {
+    color: #999;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.mail-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 13px;
+    color: #555;
+}
+
+.mail-content li {
+    font-size: 12px;
+    color: #999;
+}
+
+.footer {
+    height: 40px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
